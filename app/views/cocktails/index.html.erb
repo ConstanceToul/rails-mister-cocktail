@@ -1,9 +1,17 @@
-<p> <%= link_to "New cocktail", new_cocktail_path %> </p>
+<div class="">
+  <div class="container padded">
+    <div class="row">
+      <div class="col-xs-12">
 
-<% @cocktails.each do |cocktail| %>
- <p> <%= cocktail.name %> </p>
-  <p> <%= link_to "Details", cocktail_path(cocktail) %> </p>
-  <p> <%= link_to "Add an ingredient", new_cocktail_dose_path(cocktail) %> </p>
-  <% end %>
+        <% @cocktails.each do |cocktail| %>
+          <p> <%= cocktail.name %> </p>
+          <p> <%= link_to "Details", cocktail_path(cocktail) %> </p>
+          <p> <%= link_to "Add an ingredient", new_cocktail_dose_path(cocktail) %> </p>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 

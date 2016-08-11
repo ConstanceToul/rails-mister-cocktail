@@ -1,0 +1,33 @@
+.banner {
+  color: #FAF99F;
+  background-image: linear-gradient(-225deg, rgba(0,80,128,0.2) 0%, rgba(0,20,30,0.45) 50%), image-url('Pisco.jpg');
+  text-align: center;
+  height: 70vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  border-color: #2EAC6D;
+  background-color: #2EAC6D;
+}
+
+
+.btn-primary:hover  {
+  border-color: #2EAC6D;
+  background-color: #2EAC6D;
+}
