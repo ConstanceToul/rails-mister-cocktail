@@ -1,4 +1,9 @@
+<p> <%= link_to "New cocktail", new_cocktail_path %> </p>
+
 <% @cocktails.each do |cocktail| %>
  <p> <%= cocktail.name %> </p>
   <p> <%= link_to "Details", cocktail_path(cocktail) %> </p>
-<% end %>
+  <p> <%= link_to "Add an ingredient", new_cocktail_dose_path(cocktail) %> </p>
+  <% end %>
+
+
