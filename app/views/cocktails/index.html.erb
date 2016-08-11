@@ -1,0 +1,4 @@
+<% @cocktails.each do |cocktail| %>
+ <p> <%= cocktail.name %> </p>
+  <p> <%= link_to "Details", cocktail_path(cocktail) %> </p>
+<% end %>
