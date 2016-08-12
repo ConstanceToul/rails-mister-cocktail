@@ -28,6 +28,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
+gem 'cloudinary', '1.1.0'
+gem 'carrierwave'
+gem "attachinary", "1.3.1"
+gem "jquery-fileupload-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass'
