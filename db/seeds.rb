@@ -18,5 +18,5 @@ Ingredient.create(name: "egg")
 Ingredient.create(name: "miel")
 Ingredient.create(name: "vanilla")
 
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Sangria")
+# Cocktail.create(name: "Mojito")
+# Cocktail.create(name: "Sangria")

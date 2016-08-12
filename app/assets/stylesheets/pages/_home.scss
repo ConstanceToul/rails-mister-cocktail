@@ -6,6 +6,17 @@
 
 }
 .wrapper {
-  background: linear-gradient(to left, #7b4397 , #dc2430); /* Chrome 10-25, Safari 5.1-6 */
+  background-color: #BCD3C2;
   min-height: 100vh;
+  padding: 30px;
+}
+
+.container {
+  background-color: #BCD3C2;
+  width: 800px;
+}
+
+.padding {
+  padding-left: 5px;
+  margin: 5px;
 }

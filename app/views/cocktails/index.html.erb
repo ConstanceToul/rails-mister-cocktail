@@ -1,15 +1,28 @@
-<div class="">
-  <div class="container padded">
+<div class="banner" >
+  <div class="banner-content">
+    <h1>The Egg Cocktails</h1>
+    <p>There's no cocktail like egg </p>
+    <%= link_to "Add a cocktail", new_cocktail_path, {class: "btn btn-success btn-lg"} %>
+  </div>
+</div>
+
+
+<div class="wrapper">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-
-        <% @cocktails.each do |cocktail| %>
-          <p> <%= cocktail.name %> </p>
-          <p> <%= link_to "Details", cocktail_path(cocktail) %> </p>
-          <p> <%= cl_image_tag cocktail.photo.url(:index) %>  </p>
-        <% end %>
-
-      </div>
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-md-4">
+          <div class="padding">
+            <%= cocktail.name %>
+            <br>
+            <%= cl_image_tag cocktail.photo.url(:index) %>
+            <br>
+            <%= link_to "Details", cocktail_path(cocktail) %>
+            <br>
+            <%= link_to "Delete", cocktail_path(cocktail), method: :delete %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
